@@ -1,0 +1,460 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background: #1d1d1d;
+    color: #ffffff;
+}
+.cta-button {
+    text-decoration: none;
+    background-color: rgb(64, 246, 64);
+    border-radius: 15px;
+    box-shadow: 3px 5px 3px #225ae8;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 10px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.cta-button img {
+    width: 32px;
+}
+h1, h2, h3 {
+    text-shadow: 1px 3px 1px #225ae8;
+}
+h1, h2, h3, header {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+header {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    background-color: #225ae8;
+    padding: 10px 4%;
+    font-size: 1.5rem;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-image: url(./assets/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+    position: relative; /* importante para que o ::before funcione */
+    z-index: 0;
+}
+.hero h1, .hero img, .hero p, .hero .cta-button {
+    z-index: 2;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), transparent);
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 6rem;
+}
+.hero p {
+    font-size: 3rem;
+    text-shadow: 1px 3px 1px #225ae8;
+}
+.hero img {
+    max-width: 400px;
+}
+.hero .cta-button {
+    font-size: 2rem;
+}
+
+.sobre {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+    padding: 20px;
+
+}
+
+.sobre-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.8rem;
+
+}
+.sobre-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+
+}
+.sobre-text h2 {
+    font-size: 4rem;
+}
+.sobre-text p {
+    font-size: 1.5rem;
+}
+.sobre img {
+    max-width: 400px;
+    box-shadow: 3px 5px 3px #225ae8;
+    border-radius: 15px;
+}
+.sobre .cta-button {
+    max-width: fit-content;
+    margin: 0 auto;
+    font-size: 2rem;
+    align-items: center;
+}
+
+
+
+.services{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: azure;
+
+}
+.services-text {
+    color: #000;
+
+}
+.services-text h2 {
+    font-size: 4rem;
+}
+.services-text p {
+    font-size: 1.5rem;
+}
+.services-itens {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+}
+.service-item {
+    background-color: #1d1d1d;
+    color: #ffffff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+    border-radius: 15px;
+    box-shadow: 3px 5px 3px #225ae8;
+}
+.service-item h3 {
+    font-size: 3rem;
+}
+.service-item p {
+    font-size: 1.4rem;
+}
+
+.services-fotos {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+.foto img {
+    max-width: 200px;
+    border-radius: 12px;
+    box-shadow: 3px 5px 3px #1d1d1d;
+}
+
+
+.services-cta {
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #1d1d1d;
+    color: #ffffff;
+    padding: 20px;
+    gap: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 3px 5px 3px #225ae8;
+    text-align: center;
+}
+.services-cta h2 {
+    font-size: 4rem;
+}
+.services-cta p {
+    font-size: 1.8rem;
+}
+.services-cta .cta-button {
+    font-size: 2rem;
+    max-width: fit-content;
+    margin: 0 auto;
+}
+
+
+.avaliacoes {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.avaliacoes h2 {
+    font-size: 3.5rem;
+}
+
+
+
+.faq {
+    display: flex;
+    flex-direction: column;
+
+}
+.faq h2 {
+    font-size: 4rem;
+    text-align: center;
+}
+
+
+
+.contato {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 20px;
+    text-align: center;
+    background-image: url(./assets/banner.jpg);
+    background-position: 75%;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+    position: relative; /* importante para que o ::before funcione */
+    z-index: 0;
+    background-attachment: fixed;
+}
+.contato h2, .contato .cta-button {
+    z-index: 2;
+}
+.contato::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), transparent);
+    z-index: 1;
+}
+.contato h2 {
+    font-size: 4rem;
+}
+.contato .cta-button {
+    font-size: 2rem;
+    max-width: 250px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 20px;
+    background-color: #225ae8;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+footer a {
+    color: #ffffff;
+    font-family: 'Bebas Neue', sans-serif;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+footer h3 {
+    font-size: 2rem;
+}
+footer p {
+    font-size: 1.4rem;
+    line-height: 1;
+}
+
+@media screen and (max-width: 1020px){
+    header {
+        align-items: center;
+        justify-content: center;
+    }
+    nav {
+        display: none;
+    }
+    .hero {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 20px;
+        background-position: 73%;
+    }
+    .hero h1 {
+        font-size: 3.2rem;
+        line-height: 1;
+    }
+    .hero p {
+        font-size: 1.4rem;
+        line-height: 1;
+    }
+    .hero .cta-button {
+        font-size: 1.6rem;
+    }
+
+    .sobre {
+        display: flex;
+        flex-direction: column;
+
+    }
+    .sobre-container {
+        flex-direction: column;
+    }
+    .sobre-text {
+        gap: 1rem;
+    }
+    .sobre-text h2 {
+        font-size: 2.3rem;
+        line-height: 1.1;
+    }
+    .sobre-text p {
+        font-size: 1.3rem;
+        line-height: 1;
+
+    }
+    .sobre-container img {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    .sobre .cta-button {
+        font-size: 1.4rem;
+        flex-wrap: nowrap;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        
+    }
+    .services-text {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .services h2 {  
+        text-align: center;
+        font-size: 2.6rem;
+        line-height: 1;
+    }
+    .services-text p {
+        font-size: 1.4rem;
+        line-height: 1;
+        text-align: center;
+    }
+    .services-itens {
+        display: flex;
+        flex-direction: column;
+    }
+    .service-item {
+        max-width: 380px;
+        width: 320px;
+    }
+    .service-item .cta-button {
+        font-size: 1.3rem;
+        text-align: center;
+        padding: 15px;
+    }
+    .fotos {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .foto img {
+        max-width: 200px;
+        width: 150px;
+    }
+    .services-cta h2 {
+        font-size: 2rem;
+    }
+    .services-cta p {
+        font-size: 1.6rem;
+        line-height: 1.1;
+    }
+    .services-cta .cta-button {
+        font-size: 1.4rem;
+        padding: 15px;
+    }
+
+    .avaliacoes h2 {
+        font-size: 2.3rem;
+        text-align: center;
+        line-height: 1;
+    }
+    
+
+    .contato h2 {
+        font-size: 2.5rem;
+        line-height: 1;
+    }
+    .contato .cta-button {
+        font-size: 1.8rem;
+        padding: 15px;
+        text-transform: uppercase;
+    }
+
+    .faq h2 {
+        font-size: 2.3rem;
+    }
+
+    footer h3 {
+        font-size: 2rem;
+    }
+    footer p {
+        font-size: 1.4rem;
+        line-height: 1;
+    }
+    footer a {
+        color: #ffffff;
+        font-family: 'Bebas Neue', sans-serif;
+        text-decoration: none;
+        font-size: 1.5rem;
+    }
+
+}
