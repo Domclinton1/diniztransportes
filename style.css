@@ -49,6 +49,10 @@ header {
     background-color: #225ae8;
     padding: 10px 4%;
     font-size: 1.5rem;
+    align-items: center;
+}
+header .logo img {
+    max-width: 100px;
 }
 nav {
     display: flex;
@@ -71,7 +75,7 @@ nav a {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 80vh;
+    height: 100%;
     position: relative; /* importante para que o ::before funcione */
     z-index: 0;
 }
@@ -178,12 +182,14 @@ nav a {
     gap: 1.3rem;
     border-radius: 15px;
     box-shadow: 3px 5px 3px #225ae8;
+
 }
 .service-item h3 {
     font-size: 3rem;
 }
 .service-item p {
     font-size: 1.4rem;
+    line-height: 1;
 }
 
 .services-fotos {
@@ -301,6 +307,9 @@ footer {
     justify-content: center;
     align-items: center;
 }
+footer img {
+    max-width: 200px;
+}
 footer a {
     color: #ffffff;
     font-family: 'Bebas Neue', sans-serif;
@@ -333,6 +342,10 @@ footer p {
     .hero h1 {
         font-size: 3.2rem;
         line-height: 1;
+    }
+    .hero img {
+        max-width: 400px;
+        width: 95%;
     }
     .hero p {
         font-size: 1.4rem;
