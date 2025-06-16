@@ -246,15 +246,52 @@ nav a {
 
 
 
+/* FAQ Styles */
 .faq {
-    display: flex;
-    flex-direction: column;
+  padding: 40px 20px;
+  background-color: #f4f4f4;
+  text-align: center;
+}
 
-}
 .faq h2 {
-    font-size: 4rem;
-    text-align: center;
+  font-size: 2.6rem;
+  margin-bottom: 20px;
+  color: #333;
 }
+
+.faq-container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.faq-item {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.faq-question {
+  width: 100%;
+  padding: 15px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  background-color: #1d1d1d;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  color: #225ae8;
+  border-radius: 12px;
+}
+
+.faq-answer {
+  padding: 0 15px 15px;
+  display: none;
+  background-color: #000;
+  color: #333;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
 
 
 
