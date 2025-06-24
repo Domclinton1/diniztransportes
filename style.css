@@ -25,6 +25,14 @@ body {
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
     font-style: normal;
+    transition: 1s ease-in-out;
+    z-index: 999;
+    
+}
+.cta-button:hover {
+    transform: scale(1);
+    background-color: #225ae8;
+    color: rgb(64, 246, 64);
 }
 .cta-button img {
     width: 32px;
@@ -62,6 +70,11 @@ nav {
 nav a {
     color: #ffffff;
     text-decoration: none;
+    transition: 0.5s ease-in-out;
+}
+nav a:hover {
+    color: rgb(64, 246, 64);
+
 }
 
 .hero {
@@ -158,8 +171,23 @@ nav a {
     background-color: azure;
 
 }
+.service-item-text {
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.service-item-text .cta-button {
+    width: fit-content;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    font-size: 28px;
+}
 .services-text {
     color: #000;
+    
 
 }
 .services-text h2 {
@@ -365,6 +393,41 @@ footer h3 {
 footer p {
     font-size: 1.4rem;
     line-height: 1;
+}
+
+.btn-whatsapp {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 99;
+}
+.btn-whatsapp img {
+  max-width: 40px;
+  transition: 0.4s;
+}
+.btn-whatsapp img:hover {
+  transform: scale(1.1);
+}
+
+.btn-whatsapp .tooltip-text {
+  visibility: hidden;
+  position: absolute;
+  width: 220px;
+  top: 8px;
+  left: -224px;
+  padding: 6px;
+  border-radius: 8px;
+  text-align: center;
+  background-color: rgb(64, 246, 64);
+  color: #FFF;
+  opacity: 0;
+  transition: opacity 0.4s;
+  font-family: 'Poppins', sans-serif;
+}
+
+.btn-whatsapp:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
 }
 
 @media screen and (max-width: 1020px){
